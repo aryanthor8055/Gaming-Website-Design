@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1a0327;
+    font-family: 'Open Sans', sans-serif;
+    height: 350vh;
+}
+.container1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/bc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    clip-path: polygon(0 0, 85% 0, 57% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+.logo .fas{
+    font-size: 50px;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+    
+}
+
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+ul.navbar li a.active{
+color: yellow;
+}
+
+ul.navbar li a:hover:not(:active){
+color: yellow;
+}
+#btn{
+    width: 250px;
+    height: 10vh;
+    background: yellow;
+    color: black;
+    outline: none;
+    border: none;
+    clip-path: polygon(32% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+#btn.fas{
+    margin-right: 10px;
+}
+
+/* Header Ends  */
+
+.container{
+    margin-top: 50px;
+    margin-left: 210px;
+    display: flex;
+    width: 70vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex:0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3 {
+    background-color: black;
+    border: 2px solid white;
+    color: tomato;
+    text-decoration: underline;
+    border-radius: 15px;
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 2px 5px;
+    margin: 0px;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+    background-size: cover,contain;
+    background-position:top;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width:500px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
+}
+/* cards end  */
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+.logo-section h1{
+    width:250px;
+    font-size: 2rem;
+    color: yellow;
+    margin-left: 10px;
+}
+.logo-section .fas{
+    font-size: 6rem;
+    color: yellow;
+}
+
+/* logo section ends  */
+.section1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.767),rgba(0,0,0.712)),url('img/6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-1-wrapper{
+    width: 70%;
+    margin: auto;
+}
+.section1 h1{
+    font-size: 1.5rem;
+    color: yellow;
+    font-weight: 450;
+
+}
+.section-1-img{ 
+    display: flex;
+}
+.section-1-img .img{
+    width: 100px;
+    height: 130px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pK7cTUsi1ejl-k_LPmu5g5yNmM4C6nXfZg&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.section-1-img .img-2{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBmrtaZ3iZTx0ZlBsL0hUCjFJ5hd-ag15tg&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-3{
+    background: url('https://pwimages-a.akamaihd.net/nocache/8b/5c/8b5cc42d4dd45a9bd0bb01847a658eaf1631635380.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-4{
+    background: url('https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3l8a1iv0wCVkfNnNmPf95g/ff5d28fa91bfefdabe43523bae4d6315/rkb2-game_info-boxart-keyart-01-560x698-logo_Tablet-_1_.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-5{
+    background: url('https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1581607644-61s8HfeFoL.jpg?crop=0.998xw:1xh;center,top&resize=480:*');
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-6{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MEPTRhVINId4k5yDxnhOV3PjZQOi-FJy9w&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-7{
+    background: url('http://img1.igg.com/999/placard/2017/05/23/035126_2630.png');
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-8{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBm7Zd22vJ18VCXLbeXm-qPqD203VSyuOlDIkSDRg0fG65rdhWBIFjKuBLPVYiL6QyNE&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+}
+.img:hover{
+    transform: translateY(-10px);
+}
+/* section one ends  */
+.game-categories{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+.game-categories h1{
+    font-size: 1.5rem;
+    margin:30px 0;
+    color: yellow;
+}
+.game-wrapper{
+    display: flex;
+}
+.gw{
+    width: 120px;
+    height: 120px;
+    background: url('https://upload.wikimedia.org/wikipedia/en/f/f1/Race_Driver_-_GRID_%28box_art%29.png');
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px 0 0;
+    border-radius: 10px;
+}
+.gw:hover{
+    transform: translateY(-10px);
+}
+.left{
+    position: relative;
+    right: -140px;
+}
+.gw-1{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULeIab2Til18v1K5hJFNlgccMo5Bji1aQfg&usqp=CAU');
+    background-size: cover;
+    background-position: center;  
+}
+.gw-2{
+    background: url('https://hips.hearstapps.com/pop.h-cdn.co/assets/16/08/1456423887-game-7.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+.gw-3{
+    background: url('https://i.ytimg.com/vi/r-UBu8dxM1s/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+.gw-4{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gJrceAF_8YoGIvql1fGIrZ5EWkyzpAcq2g&usqp=CAU');
+    background-size: cover;
+    background-position: center;  
+}
+.gw-5{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxAtmjFIJ3dKMLqaA-_iI5VL0Tc96Fe9IFdw&usqp=CAU');
+    background-size: cover;
+    background-position: center;  
+}
+.gw-6{
+    background: url('https://i.ytimg.com/vi/43xLjVDejkQ/hqdefault.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+.gw-7{
+    background: url('https://i.ytimg.com/vi/RSJ3xhRitv4/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;  
+}.gw-8{
+    background: url('https://pictures.topspeed.com/IMG/crop/202011/port-bike-stunt_800x0w.jpg');
+    background-size: cover;
+    background-position: center;  
+}.gw-9{
+    background: url('https://m.media-amazon.com/images/I/812CrerASqL._SX385_.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+
+/* section 1.1 ends  */
+
+.section-2{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://lisagawlas.files.wordpress.com/2015/05/quantum-flow.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-2 h1{
+    font-family:'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.p-image{
+    width: 200px;
+    height: 200px;
+    background: url('https://prodigits.co.uk/thumbs/wallpapers/p2ls/games/36/3b08e1f512281349.jpg');
+    background-size:cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+
+}
+.p-image-1::after{
+    content: '';
+    position: absolute;
+    right: -35px;
+    bottom: 0;
+    font-size: 2rem;
+    color: yellow;
+
+}
+.players span{
+    font-size: 1.5rem;
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.stars{
+    color: yellow;
+}
+.p-image-2{
+    background: url('https://kofallstarx.com/wp-content/uploads/2020/01/orochi-97-image.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.p-image-3{
+    background: url('https://besthqwallpapers.com/Uploads/22-1-2021/153187/thumb2-black-goku-4k-violet-neon-lights-dragon-ball-antagonist.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.p-image-4{
+    background: url('https://media.comicbook.com/2017/09/avengers-infinity-war-thanos-infinity-gauntlet-1018561.jpeg');
+    background-size:cover;
+    background-position: center;
+}
+.section-3{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://i.ytimg.com/vi/nGOK-t4K20s/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-3 h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+.section-3-wrapper{
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.feedback{
+    width: 250px;
+    height: 300px;
+    background: url('https://previews.123rf.com/images/annaleni/annaleni1903/annaleni190300216/119592533-game-playing-neon-sign-vector-illustration-of-gamer-promotion-.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.feedback-desc{
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.767);
+    padding: 10px;
+    color: white;
+    margin-right: 10px;
+}
+
+.feedback-desc .far{
+    color: yellow;
+    font-size: 30px;
+}
+.f-image-2{
+    background: url('https://im.indiatimes.in/content/2021/Jul/online-gaming-3_60f26b282a463.jpg?w=725&h=463');
+    background-size: cover;
+    background-position: center
+}
+
+.footer{
+    width: 100%;
+    height: 55vh;
+    background: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.footer h3{
+    font-size: 1.9rem;
+    color: yellowgreen;
+}
+.footer a{
+    color: mediumspringgreen;
+    font-size: 20px;
+}
+.footer a:hover{
+    color: red;
+}
+.footer-body{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logo{
+    height: 12vh;
+    background: yellow;
+    color: black;
+    line-height: 1.7rem;
+    clip-path: polygon(0 0, 93% 0, 65% 100%, 0% 100%);
+
+
+}
+
+ul h3{
+    color: white;
+    font-weight: 450;
+    margin-right: 140px;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+
+}
+ul li a .fab{
+    font-size: 1.2rem;
+    color: yellow;
+    margin-right: 15px;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: yellow;
+font-weight: bold;
+}
